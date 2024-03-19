@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: lahorepod
+  labels:                                                   
+    env: development
+    class: pods
+spec:
+    containers:
+       - name: c00
+         image: centos
+         command: ["/bin/bash", "-c", "while true; do echo Hello-Pakistan; sleep 5 ; done"]
